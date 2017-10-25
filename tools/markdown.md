@@ -46,6 +46,6 @@ imap <silent> <F8> <Plug>MarkdownPreview
 nmap <silent> <F9> <Plug>StopMarkdownPreview
 " 插入模式
 imap <silent> <F9> <Plug>StopMarkdownPreview
-'''
+```
 
 # [markdown 语法](http://www.appinn.com/markdown/#autolink)
