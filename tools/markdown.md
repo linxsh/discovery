@@ -1,4 +1,4 @@
-# [markdown 安装以及配置](https://github.com/iamcco/markdown-preview.vim)
+### [markdown 安装以及配置](https://github.com/iamcco/markdown-preview.vim)
 * 插件安装
 ```
 Plugin 'godlygeek/tabular'
@@ -48,4 +48,4 @@ nmap <silent> <F9> <Plug>StopMarkdownPreview
 imap <silent> <F9> <Plug>StopMarkdownPreview
 ```
 
-# [markdown 语法](http://www.appinn.com/markdown/#autolink)
+### [markdown 语法](http://www.jianshu.com/p/7bd23251da0a)
