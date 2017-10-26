@@ -1,7 +1,7 @@
 # [markdown 安装以及配置](https://github.com/iamcco/markdown-preview.vim)
 * 插件安装
 ```
-Plugin 'plasticboy/vim-markdown'
+Plugin 'godlygeek/tabular'
 ```
 ```
 Plugin 'plasticboy/vim-markdown'
