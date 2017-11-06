@@ -3,7 +3,7 @@
 #### 1\. **tools**
 * [markdown 配置](./tools/markdown.md)
 * [git 配置以及使用](./tools/git.md)
-* [vim 配置以及使用](./tools/vim.mpd)
+* [vim 配置以及使用](./tools/vim.md)
 
 #### 2\. **works**
 * [network 调试](./works/network.md)
