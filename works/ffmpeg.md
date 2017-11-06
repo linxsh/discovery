@@ -6,3 +6,5 @@
    --disable-asm 去掉汇编的东西
 2. ffplay安装, 依赖于sdl库, 不同的ffmpeg版本依赖于不同的sdl版本库.
    sudo apt-get install libsdl2-dev
+3. ffmpeg使用
+   * 多个mp4流合并成ts流,转换容器格式,不转换音视频编码: ffmpeg -i 1.mp4 -i 2.mp4 -vcodec copy -acodec copy 1.ts
