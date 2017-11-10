@@ -33,3 +33,18 @@ imap <silent> <F9> <Plug>StopMarkdownPreview
 ```
 
 ### [markdown 语法](http://www.jianshu.com/p/7bd23251da0a)
+```
+1. 插入图片: 注意 =前有个空格，可以只写宽度。
+	![](./pic/pic1_50.png =100x100)
+
+2. 对齐显示: 其中对齐方式有center / right / left
+	<center>
+	![]()
+	</center>
+
+3. 并排显示图片:
+	<figure>
+	![]()
+	![]()
+	</figure>
+```
