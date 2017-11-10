@@ -12,3 +12,4 @@
 
 ### 3\. **develop**
 * [qt 相关工程安装](./develop/qt.md)
+* [opencv 算法分析](./develop/opencv.md)
