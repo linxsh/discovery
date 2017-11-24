@@ -13,7 +13,7 @@
      1\. -i 设定输入流
      2\. -f 设定输出格式
      3\. -ss 开始时间
-	 4\. -t 持续时间
+     4\. -t 持续时间
    * 视频参数：
      1\. -b 设定视频流量，默认为200Kbit/s
      2\. -r 设定帧速率，默认为25
@@ -31,4 +31,3 @@ ffmpeg -ss 0:1:30 -t 0:0:20 -i input.avi -vcodec copy -acodec copy output.avi   
 ffmpeg -i input.mp4 -vcodec h264 -bf 0 -g 25 -s 352*278 -an -f m4v output.h264
 //-g 关键帧间隔控制 -bf B帧数目控制
 ```
-
