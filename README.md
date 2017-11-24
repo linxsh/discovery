@@ -6,6 +6,7 @@
 * [git 配置/使用](./tools/git.md)
 * [network 配置/使用](./tools/network.md)
 * [ffmpeg 安装/使用](./tools/ffmpeg.md)
+* [多媒体信息探测工具](./tools/media-probe.md)
 
 ### 2\. **develop**
 * [qt 相关工程安装](./develop/qt.md)
