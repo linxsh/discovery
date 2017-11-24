@@ -9,3 +9,5 @@
 3. 重启nfs-server: sudo /etc/init.d/nfs-kernel-server restart
 4. 客服端 mount -t nfs -o rw,nolock,tcp 192.168.110.22:/opt/nfs/public-nfs /tmp
 
+### 更改目录所属用户组
+chown -R linxsh /opt
