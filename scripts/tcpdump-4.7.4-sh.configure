@@ -1,0 +1,6 @@
+export CC=csky-linux-gcc
+export LD=csky-linux-ld
+export CFLAGS=-static
+export CPPFLAGS=-static
+export LDFLAGS=-static
+./configure --host=mips-linux --prefix=/opt/goxceed/csky-linux

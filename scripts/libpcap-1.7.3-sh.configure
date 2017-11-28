@@ -1,0 +1,3 @@
+export CC=csky-linux-gcc
+export LD=csky-linux-ld
+./configure --host=mips-linux --prefix=/opt/goxceed/csky-linux --without-flex
