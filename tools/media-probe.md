@@ -23,9 +23,17 @@
 ```
 1. sudo apt-get isntall flvmeta
 2. flvmeta 使用
+	flvmeta --full-dump input.file
 ```
 ### tsinfo 安装以及使用
 ```
 1. sudo apt-get install tstools
 2. tsinfo 使用
+```
+### mkvtoolnix 安装以及使用
+```
+1. sudo apt-get install mkvtoolnix
+2. mkvtoolnix
+	mkvinfo --track-info input.file 查看区块信息
+	mkvinfo --summary input.file 显示内容摘要
 ```
