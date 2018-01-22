@@ -35,6 +35,7 @@ git format-patch -n commit-id //生成 commit-id 以后的n次提交补丁文件
 应用patch以及应用过程解决patch, 步骤如下:
 git apply --stat  commit-id.patch //检查生成的patch
 git apply --check commit-id.patch //检查patch能否应用成功
+git apply commit-id.patch
 ```
 ```
 commit-id.patch出现冲突时:
