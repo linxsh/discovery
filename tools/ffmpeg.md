@@ -27,6 +27,7 @@
 		2\. -ac 设定声音的Channel数
 		3\. -acodec 设定声音编解码器，未设定时则使用与输入流相同的编解码器
 		4\. -an 不处理音频
+	* 视频信息:
 ```
 ffmpeg -ss 0:1:30 -t 0:0:20 -i input.avi -vcodec copy -acodec copy output.avi    //剪切视频
 ffmpeg -i input.mp4 -vcodec h264 -bf 0 -g 25 -s 352*278 -an -f m4v output.h264
