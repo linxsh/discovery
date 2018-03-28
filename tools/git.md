@@ -58,3 +58,13 @@ git cherry-pick conflict-commit-id1
 解决冲突
 git cherry-pick --continue
 ```
+6. repo sync异常
+```
+在使用repo sync同步代码时候出现
+error: .repo/manifests/: contains uncommitted changes
+出现这个问题的原因是本地代码发生变化，但未commit
+
+试着通过 git reset --hard来恢复所有变化的文件之后，依然存在上述问题，
+最后通过cd .repo/manifests 切换到 .repo/manifests目录下执行git stash命令，并
+通过git clean -f -d命令删除变化记录目录，然后使用repo sync就可以通过了。
+```
