@@ -33,6 +33,8 @@
 	>>> testx = test        ##共享数据存储区
 	>>> testx = test.view() ##浅复制,不改变对方shape,改变对方的值
 	>>> testx = test.cpoy() ##深复制,不共享数据存储区
+	>>> testx = np.clip(test, min, max) ##限制test的上限值和下限值
+	>>> testx = test[r0:r1, c0:c1] ##取矩阵的[r0,r1]行,[c0,c1]列
 	3. 矩阵乘法
 	>>> test*test         ##矩阵相应位置元素相乘
 	>>> test.dot(test.T)  ##矩阵与转置矩阵相乘

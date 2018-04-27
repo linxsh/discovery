@@ -1,32 +1,23 @@
-### 更改目录所属用户组
+#### 更改目录所属用户组
 ```
 chown -R linxsh /opt
 ```
-### zsh安装以及配置
-```
-apt-get install zsh
-chsh -s /bin/zsh  ##重启生效
-cp ../zsh-shell/.zshrc ~/
 
-脚本执行命令not found:
-例如source, 需要执行,zsh scripts.sh
+#### linux 删除文件^M方法
+* 方法1
 ```
-### vim安装以及配置
+打开文件 vim filename
+命令模式下输入 :set fileformat=unix
+保存退出 :w 
 ```
-apt-get install vim
-git clone https://github.com/linxsh/vim-config.git
-cp vim-config/.vimrc ~/
-cp vim-config/.vim ~/ -rf
-
-插件安装:
-/home/linxsh: vim
-:PluginInstall
-
-vim文档使用说明: http://blog.csdn.net/namecyf/article/details/7787479
+* 方法2
+```
+$ dos2unix filename
 ```
 
-### ubuntu 64bit 安装32bit交叉编译工具链需要安装以下库
+#### ubuntu 64bit 安装32bit交叉编译工具链
 ```
 apt-get install lib32z1 lib32ncurses5
 apt-get install lib32stdc++6
 ```
+
