@@ -9,6 +9,29 @@
 3. 重启nfs-server: sudo /etc/init.d/nfs-kernel-server restart
 4. 客服端 mount -t nfs -o rw,nolock,tcp 192.168.110.22:/opt/nfs/public-nfs /tmp
 
+### tftp 服务
+1. 安装tftp-server: sudo apt-get install tftpd-hpa #安装服务器
+2. 配置TFTP服务器
+	1. sudo vim /etc/default/tftpd-hpa
+	2. TFTP_USERNAME="tftp"
+	3. TFTP_ADDRESS="0.0.0.0:69"
+	4. TFTP_DIRECTORY="/opt/tftpboot" #服务器目录,需要设置权限为777,chomd 777 /opt/tftpboot
+	5. TFTP_OPTIONS="-l -c -s" # 这里是选项,-c是可以上传文件的参数，-s是指定tftpd-hpa服务目录，上面已经指定
+3. 重新启动TFTP服务: sudo service tftpd-hpa restart
+4. 关闭防火墙: sudo ufw disable
+5. 安装tftp: sudo apt-get install tftp
+6. 下载文件: tftp [ip]       >get [file]
+7. 远程下载文件提示: transfer timeout
+```
+ 关闭iptables（关闭命令要比启动复杂）
+ iptables -F
+ iptables -X
+ iptables -Z
+ iptables -P INPUT ACCEPT
+ iptables -P OUTPUT ACCEPT
+ iptables -P FORWARD ACCEPT
+```
+
 ### 开发板移植tcdump
 * 移植
 	* 开源代码:
