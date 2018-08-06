@@ -19,5 +19,6 @@ $ dos2unix filename
 ```
 apt-get install lib32z1 lib32ncurses5
 apt-get install lib32stdc++6
+sudo apt-get install libtcl8.5:i386
 ```
 
