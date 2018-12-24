@@ -52,3 +52,10 @@ iskey:0 type:P checksum:94649101 plane_checksum:[0210BB12 06D9A1F8 864933E8] mea
 ```
 fflay -f rawvideo -video_size 1920*1080 input.file  //播放视频帧yuv
 ```
+
+### ffmpeg移植
+	* 开源代码:
+		* ffmpeg: git clone https://github.com/FFmpeg/FFmpeg.git
+	* 编译配置脚本:
+		* [ffmpeg-sh.configure](../scripts/ffmpeg-sh.configure)
+		* make;make install

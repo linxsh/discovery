@@ -70,8 +70,17 @@ make: yacc: Command not found
 sudo apt-get install byacc
 ```
 * 使用
-	* 
-	* 
+	* tcpdump抓取网络包: 
+		* ifconfig 查看网络设备
+		* tcpdump -i [net interface]
+	* tcpdump抓取usb交互包:
+		* linux内核配置: USB Support > USB Monitor
+		* mount -t debugfs none_debugs /sys/kernel/debug 如果提示已经挂载，可以不运行这个命令
+		* sudo modprobe usbmon
+		* sudo ls -l /sys/kernel/debug/usb/usbmon
+		* sudo cat /sys/kernel/debug/usb/devices
+		* tcpdump -D 查看USB等设备
+		* tcpdump -i [usb interface]
 
 ### Wirshark分析工具
 * 安装
@@ -87,3 +96,16 @@ wireshark:x:130 > wireshark:x:130:linxsh
 		* 
 	* 过滤条件
 	* 统计
+
+### 建立简单http服务器
+1. 进入需要http的目录
+2. 开启http服务器
+```
+python -m SimpleHTTPServer 8080
+python ../tools/http.server
+```
+3. 开启https服务器
+```
+python ../tools/https.server
+```
+4. 客户段输入http://ip:8080/

@@ -1,0 +1,6 @@
+export PATH=$PATH:/opt/goxceed/arm-linux
+export ARCH=ARM
+export CROSS_COMPILE=arm-linux-gnueabihf-
+export CC=arm-linux-gnueabihf-gcc
+export CXX=arm-linux-gnueabihf-g++
+./configure --disable-asm --enable-shared --disable-static --cross-prefix=arm-linux-gnueabihf- --prefix=/opt/goxceed/arm-linux --host-cc=arm-linux-gnueabihf-gcc --arch=arm --target-os=linux --disable-doc
