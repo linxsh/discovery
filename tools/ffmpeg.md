@@ -55,7 +55,8 @@ iskey:0 type:P checksum:94649101 plane_checksum:[0210BB12 06D9A1F8 864933E8] mea
 
 4. ffplay使用
 ```
-fflay -f rawvideo -video_size 1920*1080 input.file  //播放视频帧yuv
+ffplay -f rawvideo -video_size 1920*1080 input.file  //播放视频帧yuv
+ffplay -video_size 300x300 -pixel_format gray8 input.file //播放y图像
 ```
 
 ### ffmpeg移植

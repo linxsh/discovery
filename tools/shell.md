@@ -3,6 +3,11 @@
 chown -R linxsh /opt
 ```
 
+#### 增加串口用户权限
+```
+sudo usermod -aG dialout linxsh
+```
+
 #### linux 删除文件^M方法
 * 方法1
 ```
@@ -22,3 +27,10 @@ apt-get install lib32stdc++6
 sudo apt-get install libtcl8.5:i386
 ```
 
+#### od使用
+
+#### dd使用
+
+#### awk使用
+
+#### xxd使用
