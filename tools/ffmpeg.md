@@ -48,10 +48,18 @@ iskey:0 type:P checksum:97A19105 plane_checksum:[3E22A0A7 6E557A4F 5E557600] mea
 [Parsed_showinfo_0 @ 0x9968da0] n:   2 pts: 162000 pts_time:1.8     pos:   868936 fmt:yuv420p sar:1/1 s:1920x1080 i:P
 iskey:0 type:P checksum:94649101 plane_checksum:[0210BB12 06D9A1F8 864933E8] mean:[65 120 138] stdev:[49.2 10.2 10.1]
 ```
+
+4. ffmpeg服务器搭建
 	* 抓屏功能以及通过ffserver服务器
 		1. ffmpeg -f x11grab -framerate 15 -video_size 1280x1024 -an -i :0.0 http://127.0.0.1:8090/feed1.ffm
 		2. sudo cp [ffserver.conf](../script/ffserver.conf) /etc/
 		3. ffserver
+	* nginx + ffmpeg搭建hls服务器
+		1. ./[hls_server.sh](../scripts/hls_server.sh) framerate videosize bitstream
+		2. sudo apt-get install nginx
+		3. sudo cp nginx.conf /etc/nginx/sites-enabled/default 
+		4. sudo nginx -s reload
+		5. 浏览器输入: http://localip/hls
 
 4. ffplay使用
 ```

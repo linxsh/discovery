@@ -1,0 +1,2 @@
+#ffmpeg -f x11grab -framerate 25 -video_size 1920*1024 -an -i :0.0 -vcodec mpeg4 -r $1 -b:v $3 -vf scale=$2 -f ssegment -segment_format mpegts -segment_list live.m3u8 -segment_list_flags +live -segment_list_size 6 -segment_time 10 -hls_wrap 10 live%01d.ts 
+ffmpeg -f x11grab -framerate 25 -video_size 1920*1024 -an -i :0.0 -vcodec mpeg4 -r $1 -b:v $3 -vf scale=$2 -f hls -hls_list_size 6 -hls_wrap 10 -hls_time 5 live.m3u8 
